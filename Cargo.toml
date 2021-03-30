@@ -13,7 +13,7 @@ links = "heif"
 build = "build.rs"
 
 
-[dependencies]
+[target.'cfg(not(target_arch = "wasm32"))'.dependencies]
 libc = "0.2.82"
 
 
